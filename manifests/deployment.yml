@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bk 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bk
+  template:
+    metadata:
+      labels:
+        app: bk 
+    spec:
+      containers:
+        - name: bk 
+          image: acrteam4.azurecr.io/bk
+          ports:
+          - containerPort: 8082
