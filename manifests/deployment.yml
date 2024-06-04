@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: bk 
-          image: acrteam4.azurecr.io/bk:63
+          image: acrteam4.azurecr.io/bk:68
           env:
           - name : DB_URL
             valueFrom: 
