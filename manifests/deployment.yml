@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: p2bk 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: p2bk
+  template:
+    metadata:
+      labels:
+        app: p2bk 
+    spec:
+      containers:
+        - name: p2bk 
+          image: p2teamacr.azurecr.io/p2bk
+          ports:
+          - containerPort: 8082
