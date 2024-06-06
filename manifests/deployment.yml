@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: p2bk 
-          image: p2teamacr.azurecr.io/p2bk:94
+          image: azurebackend1.azurecr.io/userservice
           env:
           - name : DB_URL
             valueFrom: 
