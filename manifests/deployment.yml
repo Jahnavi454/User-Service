@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: p2bk 
+  name: revhire-user
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: p2bk
+      app: revhire-user
   template:
     metadata:
       labels:
-        app: p2bk 
+        app: revhire-user
     spec:
       containers:
-        - name: p2bk 
+        - name: revhire-user
           image: azurebackend1.azurecr.io/userservice
           env:
           - name : DB_URL
